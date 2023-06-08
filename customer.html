@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer.html</title>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="bootstrap-.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+    .main-content >div{
+    background: whitesmoke;
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-top: 1rem;
+    box-shadow: var(--color-info-dark);
+    border: 4px groove greenyellow;
+    width: 300px;
+    }
+    
+.main-content >div span{
+    background: coral;
+    border-radius: 50%;
+    padding: 0.6rem;
+    width: 40px;
+    color: white;
+    position: relative;
+    
+} 
+input{
+    width: 250px;
+    height: 30px;
+}
+input::placeholder{
+    color: greenyellow;
+}
+.main-content textarea{
+    margin-top: 20px;
+    width: 250px;
+
+}
+    .main-content >div label{
+        padding-top: 20px;
+        padding-left: 30px;
+    }
+    .main-content button{
+        width: 140px;
+        background: greenyellow;
+        outline: invert;
+        height: 30px;
+        text-align: center;
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="top">
+                <div class="logo">
+                    <img src="user/logo.png" alt="">
+                    <h2>Meal_<span class="text-danger">_shan</span></h2>
+                </div>
+                <div class="close" id="close-btn"><span><i class="fa fa-close"></i></span></div>
+            </div>
+            <div class="sidebar-nav">
+                <a href="index.html">
+                    <span><i class="fa fa-th"></i></span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="Customer.html">
+                    <span><i class="fa fa-user"></i></span>
+                    <h3>Customers</h3>
+                </a>
+                <a href="">
+                    <span><i class="fa fa-file"></i></span>
+                    <h3>Order</h3>
+                </a>
+                <a href="">
+                    <span><i class="fa fa-line-chart"></i></span>
+                    <h3>Analytics</h3>
+                </a>
+                <a href="">
+                    <span><i class="fa fa-envelope"></i></span>
+                    <h3>Message</h3>
+                    <span class="messge-count">47</span>
+                </a>
+                <a href="">
+                    <span><i class="fa fa-file-o"></i></span>
+                    <h3>Product</h3>
+                </a>
+                <a href="">
+                    <span><i class="fa fa-warning"></i></span>
+                    <h3>Report</h3>
+                </a>
+                <a href="">
+                    <span><i class="fa fa-superpowers"></i></span>
+                    <h3>Setting</h3>
+                </a>
+                <a href="">
+                    <span><i class="fa fa-plus"></i></span>
+                    <h3>Add Product</h3>
+                </a>
+                <a href="">
+                    <span><i class="fa fa-sign-out"></i></span>
+                    <h3>sign out <i class="fa fa-user-secret"></i></h3>
+                </a>
+
+            </div>
+        </div>
+        <main>
+            <h1 class="text-info">Dashboard</h1>
+            <div class="date">
+                <input type="date" name="" id="">
+            </div>
+            <div class="main-content">
+                <div class="card">
+                    <span><i class="fa fa-user fa-2x"></i></span>
+                    <form action="customer.html" method="post">
+                        <label for="">Name</label>
+                        <input type="text">
+                        <label for="">Email</label>
+                        <input type="email"  placeholder="@example.com">
+                        <label for="">Message</label>
+                        <textarea name="" id="" cols="4" rows="6"></textarea>
+                        <button type="submit">Send message</button>
+                    </form>
+                </div>
+                <div class="card">
+                    <span><i class="fa fa-shopping-cart fa-2x"></i></span>
+                    <div class="bar">
+                        <div class="section-header">
+                            <h2>Customer details</h2>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+    
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
